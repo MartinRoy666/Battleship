@@ -1,0 +1,140 @@
+@import "./_variable.scss";
+
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  background:rgb(18, 82, 185) !important;
+  width: $largeurcase*10;
+  text-align: center;
+}
+
+.container-fluid {
+  align-content:space-around ;
+  // width: $largeurcase;
+}
+
+.partieDunBateau {
+  background: rgb(31, 22, 163);
+  color: white;
+  height: $hauterCase;
+  width: $largeurcase;
+  
+}
+
+.bateauHorizontal {
+  display: flex;
+  flex-direction: row;
+  background: rgb(175, 22, 42);
+  color: white;
+  border-style:solid;
+  
+}
+
+.bateauVertical {
+  display: flex;
+  flex-direction: column;
+  width: $largeurcase;
+  background: rgb(175, 22, 42);
+  color: white;
+  border-style:solid;
+}
+
+//case de base du tableau de 10x10
+.case {
+  background: rgb(75, 151, 187);
+  height: $hauterCase;
+  width: $largeurcase;
+  border-style: solid;
+}
+
+//case vide du coin en haut a gauche
+.caseVide {
+  background-color: white;
+  height: $hauterCase;
+  width: $largeurcase;
+  justify-content: space-around;
+}
+
+//case entete avec les chiffres
+.caseEntete {
+  background-color:rgb(136, 133, 133);
+  color:white;
+  font-weight: bold;
+  height: $hauterCase;
+  width: $largeurcase;
+  justify-content: space-around;
+  border-style: solid;
+  border-color: black;
+}
+
+//entete des nom des colonnes A-B-C-D-E etc
+.enteteLettre {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0px;
+  padding-left: 10px;
+  width: $largeurcase*10+10px;
+}
+
+//case des entetes verticale avec les lettres
+.caseVerticale {
+  text-align:center;
+  background-color:rgb(136, 133, 133);
+  color:white;
+  font-weight: bold;
+  height: $hauterCase;
+  width: $largeurcase;
+  justify-content: space-around;
+  border-style: solid;
+  border-color: black;
+}
+.colonneVerticale {
+  text-align: center;
+  width: 16px;
+}
+.tableau {
+  background:rgb(18, 82, 185) !important;
+  width: $largeurcase*10;
+  height: $hauterCase*10;
+  margin-left: 10px;
+}
+
+.cardnomcol {
+  width: $largeurcase*2;
+  padding-left: 50px;
+  text-align:center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// #div1 {
+//   width: 350px;
+//   height: 70px;
+//   padding: 10px;
+//   border: 1px solid #aaaaaa;
+// }
+
+.cardbateau {
+  padding-left: 150px;
+  margin-left: 50px;
+}
