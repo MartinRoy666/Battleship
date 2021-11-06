@@ -16,6 +16,7 @@ export default function Montableau() {
       tableauLogique = tableauLogique.concat(<Case info = {caseTableau}/>);
   }
 
+  //Creer array pour les entetes des colonnes numeroté de 1 à 10
   rowEntete.forEach(element => {
     const caseEntete = { value: element, nomclasse: "caseEntete" };
     rowEnteteValue = rowEnteteValue.concat(<Case info = {caseEntete}/>)
