@@ -1,9 +1,8 @@
 import Case from "./case";
 import CasedesAttaques from "./casedesAttaques";
 
-// const caseTableau = { value: "" , nomclasse : "case", index: index};
-// tableauLogique = tableauLogique.concat(<Case info = {caseTableau}/>);
-
+//Fabrique de case qui sont les components des grilles.
+// elle permet de renvoyer des cases avec differente type et different nom de classe
 export default class FactoryCase {
 
   createCase(p_value, p_className, p_index, p_typeClasse) {

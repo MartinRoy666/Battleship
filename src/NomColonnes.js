@@ -18,7 +18,7 @@ export default function NomColonnes() {
   });
 
   return (
-    <div>
+    <div className="nomcolonnes">
       {caseTableau}
     </div>
   );

@@ -10,7 +10,6 @@ export default function Bateau(props) {
     })
 });
 
-
 return (
   <>
     <div className={props.valeur.sens} ref={dragRef}>

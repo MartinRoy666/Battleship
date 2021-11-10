@@ -19,13 +19,15 @@ export default function App()  {
           <div className="row">
             <div className="cardnomcol">
               <NomColonnes/>
-            </div>0
+            </div>
             <Montableau type="D"></Montableau>
             <div className="card cardbateau">
             <h3>Navires</h3>
             <Bateau draggable valeur={{id:"1", sens:"bateauVertical"}} />
             <br></br>
             <Bateau draggable valeur={{id:"2", sens:"bateauHorizontal"}}/>
+            <br></br><br></br><br></br>
+            <Bateau draggable valeur={{id:"3", sens:"bateauVertical"}} />
             </div>
 
             <div className="cardnomcol">

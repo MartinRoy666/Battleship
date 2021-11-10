@@ -1,8 +1,12 @@
 @import "./_variable.scss";
 
-.App {
-  text-align: center;
+* {
+  // box-sizing: border-box;
+   background-color: $backgroundcolor;
 }
+// .App {
+//   text-align: center;
+// }
 
 .cardbateau {
   padding-left: 150px;
@@ -18,7 +22,6 @@
 
 .container-fluid {
   align-content:space-around ;
-  // width: $largeurcase;
 }
 
 .partieDunBateau {
@@ -56,7 +59,7 @@
 
 //case vide du coin en haut a gauche
 .caseVide {
-  background-color: white;
+  // background-color: white;
   height: $hauterCase;
   width: $largeurcase;
   justify-content: space-around;
@@ -78,9 +81,8 @@
 .enteteLettre {
   display: flex;
   flex-direction: row;
-  margin-left: 0px;
-  padding-left: 10px;
   width: $largeurcase*10+10px;
+  text-align: center;
 }
 
 //case des entetes verticale avec les lettres
@@ -101,38 +103,48 @@
 }
 
 .cardnomcol {
-  width: $largeurcase*2;
-  padding-left: 50px;
+  width: $largeurcase;
   text-align:center;
+  margin-left: 200px;
 }
 
+.cardbateau {
+  background-color:darkslateblue ;
+  justify-content: space-around;
+  text-align: center;
+}
+.row {
+  margin: 0px;
+}
 .tableau {
   background:rgb(18, 82, 185) !important;
   width: $largeurcase*10;
   height: $hauterCase*10;
-  margin-left: 10px;
 }
 
-#jumbotron {
+.jumbotron {
+  background-color: cornflowerblue;
   text-align: center;
+  font-size: 36px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
 
-.App-link {
-  color: #61dafb;
-}
+// .App-link {
+//   color: #61dafb;
+// }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
 

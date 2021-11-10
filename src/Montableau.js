@@ -28,7 +28,7 @@ export default function Montableau(props) {
 
   return (
 
-    <div>
+    <div className="montableau">
        <div className="row enteteLettre">
         {rowEnteteValue}
        </div>
