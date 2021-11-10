@@ -7,15 +7,14 @@ export default function Case(props) {
 
   const [{ isOver }, dropRef] = useDrop({
         accept: 'bateau',
-        drop: (items) => setBateau((unBateau) => !unBateau.includes(items) ? [...unBateau, items] : unBateau),
-        // drop: (item) => setBateau(item),
-        // drop: (item) => setBateau((unBateau) => !unBateau.includes(item) ? [...unBateau, item] : unBateau),
-        // drop: () => DropBateau,
+        drop: (item) => DropBateau(item),
+        // drop: (items) => setBateau((unBateau) => !unBateau.includes(items) ? [...unBateau, items] : unBateau),
         collect: (monitor) => ({isOver: monitor.isOver()})
     });
 
     function DropBateau(item) {
-
+      setBateau((unBateau) => !unBateau.includes(item) ? [...unBateau, item] : unBateau)
+      console.log(item);
     }
     return (
       <React.Fragment>

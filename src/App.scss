@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.cardbateau {
+  padding-left: 150px;
+  margin-left: 50px;
+}
+
 .container {
   display: flex;
   background:rgb(18, 82, 185) !important;
@@ -21,7 +26,6 @@
   color: white;
   height: $hauterCase;
   width: $largeurcase;
-  
 }
 
 .bateauHorizontal {
@@ -43,7 +47,7 @@
 }
 
 //case de base du tableau de 10x10
-.case {
+.case, .casedesAttaques {
   background: rgb(75, 151, 187);
   height: $hauterCase;
   width: $largeurcase;
@@ -95,6 +99,13 @@
   text-align: center;
   width: 16px;
 }
+
+.cardnomcol {
+  width: $largeurcase*2;
+  padding-left: 50px;
+  text-align:center;
+}
+
 .tableau {
   background:rgb(18, 82, 185) !important;
   width: $largeurcase*10;
@@ -102,10 +113,8 @@
   margin-left: 10px;
 }
 
-.cardnomcol {
-  width: $largeurcase*2;
-  padding-left: 50px;
-  text-align:center;
+#jumbotron {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -127,14 +136,3 @@
   }
 }
 
-// #div1 {
-//   width: 350px;
-//   height: 70px;
-//   padding: 10px;
-//   border: 1px solid #aaaaaa;
-// }
-
-.cardbateau {
-  padding-left: 150px;
-  margin-left: 50px;
-}

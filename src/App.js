@@ -11,32 +11,31 @@ export default function App()  {
   return (
     <DndProvider backend={HTML5Backend}>
     <div className="App">
+      <div className="jumbotron">
+        BATTLESHIP
+        </div>
       <div className="row">
         <div className="container-fluid">
           <div className="row">
             <div className="cardnomcol">
               <NomColonnes/>
-            </div>
-            <Montableau/>          
+            </div>0
+            <Montableau type="D"></Montableau>
             <div className="card cardbateau">
             <h3>Navires</h3>
             <Bateau draggable valeur={{id:"1", sens:"bateauVertical"}} />
             <br></br>
             <Bateau draggable valeur={{id:"2", sens:"bateauHorizontal"}}/>
             </div>
+
+            <div className="cardnomcol">
+                <NomColonnes/>
+            </div>
+            <Montableau></Montableau>        
           </div>
         </div>
       </div>
-      
-      {/* let tempo={ value: element , nomclasse : "caseVerticale", index: 0} */}
-      {/* <div id="div1" onDrop={(event) => this.drop(event)} onDragOver={(event) => this.allowDrop(event)}></div> */}
-      {/* <br></br> */}
-      {/* <img id="drag1" src="img_logo.gif" draggable="true" onDragStart={(event) => this.drag(event)} width="336" height="69"></img> */}
-     
     </div>
     </DndProvider>
   );
 }
-// }
-
-
