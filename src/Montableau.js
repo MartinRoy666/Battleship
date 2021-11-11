@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import FactoryCase from './factoryCase';
 
 export default function Montableau(props) {
@@ -23,7 +23,7 @@ export default function Montableau(props) {
   rowEntete.forEach(element => {
     // const caseEntete = { value: element, nomclasse: "caseEntete" };
     // rowEnteteValue = rowEnteteValue.concat(<Case info = {caseEntete}/>)
-    rowEnteteValue = rowEnteteValue.concat(factoryCase.createCase(element, "caseEntete", 0, props.type));
+    rowEnteteValue = rowEnteteValue.concat(factoryCase.createCase(element, "caseEntete", null, props.type));
   });
 
   return (

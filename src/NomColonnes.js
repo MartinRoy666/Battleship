@@ -10,11 +10,11 @@ export default function NomColonnes() {
   // let tempoVide={ value: "" , nomclasse : "caseVide", index: 0}
   let caseTableau=[];
   // caseTableau = caseTableau.concat(<Case info = {tempoVide} />);
-  caseTableau = caseTableau.concat(factoryCase.createCase("", "caseVide", 0, "D"));
+  caseTableau = caseTableau.concat(factoryCase.createCase("", "caseVide", null, "D"));
 
   rowColumn.forEach(element => {
     // let tempo={ value: element , nomclasse : "caseVerticale", index: 0}
-    caseTableau = caseTableau.concat(factoryCase.createCase(element, "caseVerticale", 0, "D"));
+    caseTableau = caseTableau.concat(factoryCase.createCase(element, "caseVerticale", null, "D"));
   });
 
   return (

@@ -33,7 +33,7 @@ export default function App()  {
             <div className="cardnomcol">
                 <NomColonnes/>
             </div>
-            <Montableau></Montableau>        
+            <Montableau type="A"></Montableau>        
           </div>
         </div>
       </div>
