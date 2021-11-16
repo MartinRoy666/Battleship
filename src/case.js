@@ -14,7 +14,7 @@ export default function Case(props) {
 
     function DropBateau(item) {
       setBateau((unBateau) => !unBateau.includes(item) ? [...unBateau, item] : unBateau)
-      // console.log(item.getCoord());
+      // console.log(item.getCoordonnee());
       console.log(item);
       console.log(unBateau[0]);
     }

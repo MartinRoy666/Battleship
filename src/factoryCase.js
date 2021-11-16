@@ -18,7 +18,7 @@ export default class FactoryCase {
       index = p_index;
     }
     const caseTableau = { value: p_value , nomclasse : p_className, index: p_index + "_" + "case" + p_typeClasse};
-    if (p_typeClasse == "D") {
+    if (p_typeClasse === "D") {
       nouvelCase = (<Case info = {caseTableau}/>);
     } else {
       console.log(p_typeClasse);

@@ -10,8 +10,8 @@
 @mixin caseDimension {
   height: $hauterCase;
   width: $largeurcase;
-
 }
+
 .cardbateau {
   padding-left: 150px;
   margin-left: 50px;
@@ -40,7 +40,6 @@
   background: rgb(175, 22, 42);
   color: white;
   border-style:solid;
-  
 }
 
 .bateauVertical {
@@ -56,15 +55,14 @@
   @include caseDimension;
   background: red;
   border-style: solid;
-
 }
 
 .casedesAttaquesMiss {
   @include caseDimension;
   background: white;
   border-style: solid;
-
 }
+
 //case de base du tableau de 10x10
 .case, .casedesAttaques {
   @include caseDimension;
@@ -127,9 +125,11 @@
   justify-content: space-around;
   text-align: center;
 }
+
 .row {
   margin: 0px;
 }
+
 .tableau {
   background:rgb(18, 82, 185) !important;
   width: $largeurcase*10;
@@ -143,23 +143,3 @@
   font-size: 36px;
   font-weight: bold;
 }
-
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
-
-// .App-link {
-//   color: #61dafb;
-// }
-
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
-

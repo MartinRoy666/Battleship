@@ -12,9 +12,13 @@ export default function Bateau(props) {
     })
 });
 
-  // const getCoord = () => {
-  //   return coordonnee;
-  // }
+  const getCoord = () => {
+    return coordonnee;
+  }
+
+  function getCoordonnee() {
+    return coordonnee;
+  }
 
 return (
   <>
