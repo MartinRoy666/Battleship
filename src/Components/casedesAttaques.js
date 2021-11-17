@@ -2,11 +2,8 @@ import React, { useState } from "react";
 
 export default function CasedesAttaques(props) {
 
-  const [etatAttaque, setEtatAttaque] = useState(false);
+  // const [etatAttaque, setEtatAttaque] = useState(false);
   const [etatCouleur, setCouleur] = useState(null);
-  // let etatCouleur;
-  // setCouleur(etatAttaque ? "red" : "white");
-  // this._onButtonClick = this._onButtonClick.bind(this);
   
    function callServer(id) {
 
@@ -27,11 +24,13 @@ export default function CasedesAttaques(props) {
   
   const _onButtonClick = (id) => {
     callServer(id);
-    // setCouleur(callServer(id) == true ? "red" : "white");
-    document.getElementById(id).style.background = etatCouleur; 
+  }
+
+  const divCouleur = {
+    backgroundColor: etatCouleur
   }
     return (
-        <div className={props.info.nomclasse} id={props.info.index} onClick={() => _onButtonClick(props.info.index)}>
+        <div className={props.info.nomclasse} style={divCouleur} id={props.info.index} onClick={() => _onButtonClick(props.info.index)}>
           {props.info.value}
         </div>
     );

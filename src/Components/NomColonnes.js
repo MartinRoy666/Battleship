@@ -1,5 +1,5 @@
 import React from 'react';
-import FactoryCase from './factoryCase';
+import FactoryCase from '../factoryCase';
 
 // Component qui retourne un array contenant les Lettre des rangées
 export default function NomColonnes() {

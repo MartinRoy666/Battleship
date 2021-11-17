@@ -1,5 +1,5 @@
-import Case from "./case";
-import CasedesAttaques from "./casedesAttaques";
+import Case from "./Components/case";
+import CasedesAttaques from "./Components/casedesAttaques";
 
 //Fabrique de case qui sont les components des grilles.
 // elle permet de renvoyer des cases avec differente type et different nom de classe

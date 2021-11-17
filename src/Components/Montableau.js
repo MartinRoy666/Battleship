@@ -1,5 +1,5 @@
 import React from 'react';
-import FactoryCase from './factoryCase';
+import FactoryCase from '../factoryCase';
 
 export default function Montableau(props) {
 

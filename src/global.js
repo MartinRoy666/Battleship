@@ -1,6 +1,6 @@
 import Logique from './Logique.js';
 
-global.LogiqueDefense = new Logique();
-global.LogiqueAttaque = new Logique();
+global.logiqueDefense = new Logique();
+global.logiqueAttaque = new Logique();
 
 export default global;

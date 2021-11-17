@@ -1,9 +1,9 @@
 @import "./_variable.scss";
 
-* {
-  // box-sizing: border-box;
-  //  background-color: $backgroundcolor;
-}
+// * {
+//   // box-sizing: border-box;
+//   //  background-color: $backgroundcolor;
+// }
 // .App {
 //   text-align: center;
 // }
@@ -17,12 +17,12 @@
   margin-left: 50px;
 }
 
-.container {
-  display: flex;
-  background:rgb(18, 82, 185) !important;
-  width: $largeurcase*10;
-  text-align: center;
-}
+// .container {
+//   display: flex;
+//   // background:rgb(109, 9, 84) !important;
+//   width: $largeurcase*10;
+//   text-align: center;
+// }
 
 .container-fluid {
   align-content:space-around ;
@@ -30,7 +30,7 @@
 
 .partieDunBateau {
   @include caseDimension;
-  background: rgb(31, 22, 163);
+  background:$colorColonnes;
   color: white;
 }
 
@@ -66,8 +66,10 @@
 //case de base du tableau de 10x10
 .case, .casedesAttaques {
   @include caseDimension;
-   background: rgb(75, 151, 187);
-  border-style: solid;
+  // background: rgb(75, 151, 187);
+  background:$mer;
+  border:0.001em solid ;
+  border-color: $griscontour;
 }
 
 //case vide du coin en haut a gauche
@@ -79,12 +81,15 @@
 //case entete avec les chiffres
 .caseEntete, .caseVerticale {
   @include caseDimension;
-  background-color:rgb(52, 67, 109);
+  // background-color:rgb(52, 67, 109);
+  display:flex;
+  padding-top:6px;
+  background-color:$gris;
   color:white;
   font-weight: bold;
   justify-content: space-around;
-  border-style: solid;
-  border-color: black;
+  border:0.001em solid ;
+  border-color: $griscontour;
 }
 
 //entete des nom des colonnes A-B-C-D-E etc
@@ -93,6 +98,10 @@
   flex-direction: row;
   width: $largeurcase*10+10px;
   text-align: center;
+  // padding-top:5px;
+  // margin: auto;
+  // justify-content:center;
+  // align-self: center;
 }
 
 //case des entetes verticale avec les lettres
@@ -131,15 +140,68 @@
 }
 
 .tableau {
-  background:rgb(18, 82, 185) !important;
+  // background:rgb(18, 82, 185) !important;
   width: $largeurcase*10;
   height: $hauterCase*10;
 }
 
 .jumbotron {
   // background-color: cornflowerblue;
-  background-color: $backgroundcolor;
-  text-align: center;
+  // background-color: $griscontour;
+  // text-align: center;
   font-size: 36px;
   font-weight: bold;
+  color:#ffffff;
+  height: auto;
+  // opacity:2;
+  width: auto;
 }
+
+
+.bg-image{
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  // width:1800px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.bg-image .mask{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color:#fff;
+}
+
+.bg-image .mask .titreJumbo{
+  height: 100%;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  color: white!important;
+}
+
+// .Screen {
+//   background-image: url("/background.jpg");
+//  }
+
+//  .imagejumbotron {
+//   background-image: url("/uss-new-jersey.jpg");
+//  }
+
+
+// .imgBackground {
+//   // background-image: url(%process.env.PUBLIC_URL%"/background.jpg") !important;
+//   background-color:rgba(255, 255, 255, 0.7) !important;
+//   opacity:0.8;
+//   background-size:auto;
+//   color:white;
+//   margin-bottom: 0px !important;
+//  }

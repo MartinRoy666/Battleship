@@ -16,7 +16,9 @@ export default function Case(props) {
       setBateau((unBateau) => !unBateau.includes(item) ? [...unBateau, item] : unBateau)
       // console.log(item.getCoordonnee());
       console.log(item);
-      console.log(unBateau[0]);
+      
+      // global.logiqueDefense.setPositionBateau(props.info.index);
+      // console.log(global.logiqueDefense.getLogique());
     }
     return (
       <React.Fragment>
