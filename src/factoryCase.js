@@ -17,11 +17,18 @@ export default class FactoryCase {
     if (p_index != null) {
       index = p_index;
     }
-    const caseTableau = { value: p_value , nomclasse : p_className, index: p_index + "_" + "case" + p_typeClasse};
+
+    const DropBoat = (item, index) => {
+      console.log("dans factory DropBoat");
+      console.log(item);
+      console.log(index);
+    }
+    
     if (p_typeClasse === "D") {
-      nouvelCase = (<Case info = {caseTableau}/>);
+      const caseTableau = { value: p_value , nomclasse : p_className, index: p_index + "_" + "case" + p_typeClasse};  
+      nouvelCase = (<Case info = {caseTableau} onDrop= { DropBoat }/>);
     } else {
-      console.log(p_typeClasse);
+      const caseTableau = { value: p_value , nomclasse : p_className, index: p_index + "_" + "case" + p_typeClasse};
       nouvelCase = (<CasedesAttaques info = {caseTableau}/>);
     }
     return nouvelCase;
