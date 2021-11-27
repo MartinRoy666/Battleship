@@ -16,11 +16,7 @@ export default function App()  {
  const bgImgmask = { 
    backgroundColor: 'rgba(0, 0, 0, 0.4)'
 }
-//    <td className={mesClasses} onClick={()=> setClasses("Square autre")} style={{backgroundColor: isOver ? "black" : color}} ref={drop}>
-  const DropBoat = (item) => {
-    // console.log(item);
-    console.log("Dans App.js drop boat");
-  }
+
 
   return (
     <DndProvider backend={HTML5Backend}>
@@ -39,6 +35,10 @@ export default function App()  {
             <div className="card cardbateau">
             <h3>Navires</h3>
             <Bateau isDragging id={"1"} sens={"H"} longueur={5} color="red"/>
+            <Bateau isDragging id={"1"} sens={"H"} longueur={3} color="blue"/>
+            <Bateau isDragging id={"1"} sens={"V"} longueur={4} color="yellow"/>
+            <Bateau isDragging id={"1"} sens={"V"} longueur={3} color="green"/>
+            <Bateau isDragging id={"1"} sens={"H"} longueur={2} color="purple"/>
             {/* <Bateau draggable valeur={{id:"1", sens:"bateauHorizontal", longueur:5}} /> */}
             <br></br>
             {/* <Bateau draggable valeur={{id:"2", sens:"bateauHorizontal", longueur: 3}}/> */}

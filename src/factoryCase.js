@@ -5,10 +5,16 @@ import CasedesAttaques from "./Components/casedesAttaques";
 // elle permet de renvoyer des cases avec differente type et different nom de classe
 export default class FactoryCase {
 
-  createCase(p_value, p_className, p_index, p_typeClasse) {
+  createCase(p_value, p_className, p_index, p_typeClasse, fctName, colorCase, stateCouleurs) {
     let value=0;
     let index=0;
     let nouvelCase;
+
+    // if (p_typeClasse == "D") {
+    //   console.log("dans createCase");
+    //   console.log(colorCase);
+    //   console.log(stateCouleurs);
+    // }
 
     if (p_value != null) {
       value= p_value;
@@ -18,15 +24,9 @@ export default class FactoryCase {
       index = p_index;
     }
 
-    const DropBoat = (item, index) => {
-      console.log("dans factory DropBoat");
-      console.log(item);
-      console.log(index);
-    }
-    
     if (p_typeClasse === "D") {
-      const caseTableau = { value: p_value , nomclasse : p_className, index: p_index + "_" + "case" + p_typeClasse};  
-      nouvelCase = (<Case info = {caseTableau} onDrop= { DropBoat }/>);
+      const caseTableau = { value: p_value , nomclasse : p_className, index: p_index + "_" + "case" + p_typeClasse, color: colorCase};
+      nouvelCase = (<Case info = {caseTableau} onDrop= { fctName } stateColor= {stateCouleurs}/>);
     } else {
       const caseTableau = { value: p_value , nomclasse : p_className, index: p_index + "_" + "case" + p_typeClasse};
       nouvelCase = (<CasedesAttaques info = {caseTableau}/>);

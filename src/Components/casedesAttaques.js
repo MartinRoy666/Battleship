@@ -13,7 +13,7 @@ export default function CasedesAttaques(props) {
     //sinon blanc
     let reponse;
     // equivalent de recevoir une reponse de hit positive
-    if (id.substring(1,id.indexOf("_")) % 2 === 1) {
+    if (id.substring(0,id.indexOf("_")) % 2 === 1) {
         reponse= true;
     }
     else {
