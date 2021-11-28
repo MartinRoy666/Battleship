@@ -6,16 +6,20 @@ import Bateau from './Components/Bateau';
 import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import imagejumbo from "./images/uss5.jpg";
+import Carrier from "./images/carrier.jpg";
+import Submarine from "./images/submarine.png";
 
 export default function App()  {
 
   const sectionImage = {
     backgroundImage: `url(${imagejumbo})`
- }
-
- const bgImgmask = { 
-   backgroundColor: 'rgba(0, 0, 0, 0.4)'
-}
+  }
+  const sectionCarrier = {
+    backgroundImage: `url(${Carrier})`
+  }
+  const bgImgmask = { 
+    backgroundColor: 'rgba(0, 0, 0, 0.4)'
+  }
 
 
   return (
@@ -32,18 +36,13 @@ export default function App()  {
               <NomColonnes/>
             </div>
             <Montableau type="D"></Montableau>
-            <div className="card cardbateau">
-            <h3>Navires</h3>
-            <Bateau isDragging id={"1"} sens={"H"} longueur={5} color="red"/>
-            <Bateau isDragging id={"1"} sens={"H"} longueur={3} color="blue"/>
-            <Bateau isDragging id={"1"} sens={"V"} longueur={4} color="yellow"/>
-            <Bateau isDragging id={"1"} sens={"V"} longueur={3} color="green"/>
-            <Bateau isDragging id={"1"} sens={"H"} longueur={2} color="purple"/>
-            {/* <Bateau draggable valeur={{id:"1", sens:"bateauHorizontal", longueur:5}} /> */}
-            <br></br>
-            {/* <Bateau draggable valeur={{id:"2", sens:"bateauHorizontal", longueur: 3}}/> */}
-            <br></br><br></br><br></br>
-            {/* <Bateau draggable valeur={{id:"3", sens:"bateauVertical", longueur:4}} /> */}
+            <div className="cardbateau">
+            {/* <h3>Navires</h3> */}
+            <Bateau isDragging id={"1"} sens={"H"} longueur={5} color="red" modelbateau="images/carrier.jpg"/>
+            <Bateau isDragging id={"1"} sens={"H"} longueur={3} color="cyan" modelbateau="/images/submarine.png"/>
+            {/* <Bateau isDragging id={"1"} sens={"V"} longueur={4} color="yellow" modelbateau="./images/submarine.png"/>
+            <Bateau isDragging id={"1"} sens={"V"} longueur={3} color="green" modelbateau="submarine.png"/>
+            <Bateau isDragging id={"1"} sens={"H"} longueur={2} color="purple" modelbateau="submarine.png"/> */}
             </div>
 
             <div className="cardnomcol">

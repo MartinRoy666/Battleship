@@ -11,12 +11,24 @@
   height: $hauterCase;
   width: $largeurcase;
 }
-
-.cardbateau {
-  padding-left: 150px;
-  margin-left: 50px;
+.Carrier {
+  background-image: url(./images/carrier.jpg);
 }
 
+.cardbateau {
+  padding-left: 200px;
+  margin-left: 20px;
+ 
+}
+
+.bg-bateau {
+  // position: relative;
+  // overflow: hidden;
+  background-repeat: no-repeat;
+  height: 38px;
+  // object-fit: cover;
+  margin-left: -150px;
+}
 // .container {
 //   display: flex;
 //   // background:rgb(109, 9, 84) !important;
@@ -34,22 +46,22 @@
   color: white;
 }
 
-.bateauHorizontal {
-  display: flex;
-  flex-direction: row;
-  background: rgb(175, 22, 42);
-  color: white;
-  border-style:solid;
-}
+// .bateauHorizontal {
+//   display: flex;
+//   flex-direction: row;
+//   background: rgb(175, 22, 42);
+//   color: white;
+//   border-style:solid;
+// }
 
-.bateauVertical {
-  display: flex;
-  flex-direction: column;
-  width: $largeurcase;
-  background: rgb(175, 22, 42);
-  color: white;
-  border-style:solid;
-}
+// .bateauVertical {
+//   display: flex;
+//   flex-direction: column;
+//   width: $largeurcase;
+//   background: rgb(175, 22, 42);
+//   color: white;
+//   border-style:solid;
+// }
 
 .casedesAttaquesHit {
   @include caseDimension;
@@ -129,11 +141,11 @@
   margin-left: 200px;
 }
 
-.cardbateau {
-  // background-color:rgb(183, 175, 235) ;
-  justify-content: space-around;
-  text-align: center;
-}
+// .cardbateau {
+//   // background-color:rgb(183, 175, 235) ;
+//   justify-content:space-evenly;
+//   text-align: center;
+// }
 
 .row {
   margin: 0px;
@@ -187,6 +199,7 @@
   justify-content: center!important;
   color: white!important;
 }
+
 
 // .Screen {
 //   background-image: url("/background.jpg");

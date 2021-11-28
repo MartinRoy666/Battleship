@@ -32,15 +32,13 @@ export default function Montableau(props) {
     }
 
     console.log("dans factory DropBoat");
-  console.log(lesIndexAColorier);
+    console.log(lesIndexAColorier);
     
     let newState = stateCouleur.slice(0);
 
     lesIndexAColorier.forEach(element => {
       newState[element] = item.color;      
     });
-
-    // newState[vraiIndex] = item.color;
     setCouleurs(newState);
   }
 
@@ -56,9 +54,9 @@ export default function Montableau(props) {
         stateCouleurs[index],
         stateCouleurs
         )
-        );
+      );
       //  tableauLogique = tableauLogique.concat(factoryCase.createCase("", (typeTableau === "D" ? "case" : "casedesAttaques"), index, props.type, () => this.DropBoat()) );
-  }
+    }
 
 
 
