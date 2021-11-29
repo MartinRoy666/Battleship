@@ -1,8 +1,7 @@
 import Case from "./Components/case";
+import CaseEntete from "./Components/caseEntete";
 import CasedesAttaques from "./Components/casedesAttaques";
 
-//Fabrique de case qui sont les components des grilles.
-// elle permet de renvoyer des cases avec differente type et different nom de classe
 export default class FactoryCase {
 
   createCase(p_value, p_className, p_index, p_typeClasse, fctName, colorCase, stateCouleurs) {
@@ -26,8 +25,13 @@ export default class FactoryCase {
     }
 
     if (p_typeClasse === "D") {
-      const caseTableau = { value: p_value , nomclasse : p_className, index: p_index + "_" + "case" + p_typeClasse, color: colorCase};
-      nouvelCase = (<Case info = {caseTableau} onDrop= { fctName } stateColor= {stateCouleurs}/>);
+      if (p_className == "caseEntete") {
+        const caseTableau = { value: p_value , nomclasse : p_className, index: p_index + "_" + "case" + p_typeClasse};
+        nouvelCase = (<CaseEntete info = {caseTableau}/>);
+      } else {
+        const caseTableau = { value: p_value , nomclasse : p_className, index: p_index + "_" + "case" + p_typeClasse, nomBateau: colorCase};
+        nouvelCase = (<Case info = {caseTableau} onDrop= { fctName } stateBateau= {stateCouleurs}/>);
+      }
     } else {
       const caseTableau = { value: p_value , nomclasse : p_className, index: p_index + "_" + "case" + p_typeClasse};
       nouvelCase = (<CasedesAttaques info = {caseTableau}/>);

@@ -1,183 +1,24 @@
 @import "./_variable.scss";
 
-// * {
-//   // box-sizing: border-box;
-//   //  background-color: $backgroundcolor;
-// }
-// .App {
-//   text-align: center;
-// }
 @mixin caseDimension {
   height: $hauterCase;
   width: $largeurcase;
 }
-
-
 .cardbateau {
   padding-left: 200px;
   margin-left: 20px;
- 
-}
-
-.bg-bateau {
-  // position: relative;
-  // overflow: hidden;
+  // justify-content: space-around;
+  // text-align: center;
   background-repeat: no-repeat;
   height: 38px;
-  // object-fit: cover;
-  margin-left: -200px;
 }
-// .container {
-//   display: flex;
-//   // background:rgb(109, 9, 84) !important;
-//   width: $largeurcase*10;
-//   text-align: center;
-// }
-
-.container-fluid {
-  align-content:space-around ;
-}
-
-.partieDunBateau {
-  @include caseDimension;
-  background:$colorColonnes;
-  color: white;
-}
-
-// .bateauHorizontal {
-//   display: flex;
-//   flex-direction: row;
-//   background: rgb(175, 22, 42);
-//   color: white;
-//   border-style:solid;
-// }
-
-// .bateauVertical {
-//   display: flex;
-//   flex-direction: column;
-//   width: $largeurcase;
-//   background: rgb(175, 22, 42);
-//   color: white;
-//   border-style:solid;
-// }
-
-.casedesAttaquesHit {
-  @include caseDimension;
-  background: red;
-  border-style: solid;
-}
-
-.casedesAttaquesMiss {
-  @include caseDimension;
-  background: white;
-  border-style: solid;
-}
-
-//case de base du tableau de 10x10
-.case, .casedesAttaques {
-  @include caseDimension;
-  // background: rgb(75, 151, 187);
-  background:$mer;
-  border:0.001em solid ;
-  border-color: $griscontour;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-//case vide du coin en haut a gauche
-.caseVide {
-  @include caseDimension;
-  justify-content: space-around;
-}
-
-//case entete avec les chiffres
-.caseEntete, .caseVerticale {
-  @include caseDimension;
-  // background-color:rgb(52, 67, 109);
-  display:flex;
-  padding-top:6px;
-  background-color:$gris;
-  color:white;
-  font-weight: bold;
-  justify-content: space-around;
-  border:0.001em solid ;
-  border-color: $griscontour;
-}
-
-//entete des nom des colonnes A-B-C-D-E etc
-.enteteLettre {
-  display: flex;
-  flex-direction: row;
-  width: $largeurcase*10+10px;
-  text-align: center;
-  // padding-top:5px;
-  // margin: auto;
-  // justify-content:center;
-  // align-self: center;
-}
-
-//case des entetes verticale avec les lettres
-// .caseVerticale {
-//   // text-align:center;
-//   background-color:rgb(52, 67, 109);
-//   // background-color:$backgroundcolor;
-//   color:white;
-//   font-weight: bold;
-//   height: $hauterCase;
-//   width: $largeurcase;
-//   justify-content: space-around;
-//   border-style: solid;
-//   border-color: black;
-// }
-
-.colonneVerticale {
-  text-align: center;
-  width: 16px;
-}
-
-.cardnomcol {
-  width: $largeurcase;
-  text-align:center;
-  margin-left: 200px;
-}
-
-// .cardbateau {
-//   // background-color:rgb(183, 175, 235) ;
-//   justify-content:space-evenly;
-//   text-align: center;
-// }
-
-.row {
-  margin: 0px;
-}
-
-.tableau {
-  // background:rgb(18, 82, 185) !important;
-  width: $largeurcase*10;
-  height: $hauterCase*10;
-}
-
-.jumbotron {
-  // background-color: cornflowerblue;
-  // background-color: $griscontour;
-  // text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  color:#ffffff;
-  height: auto;
-  // opacity:2;
-  width: auto;
-}
-
 
 .bg-image{
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
-  // background-size: cover;
-  // width:1800px;
   height: 300px;
-  object-fit: cover;
+  // object-fit: cover;
 }
 
 .bg-image .mask{
@@ -201,3 +42,92 @@
 }
 
 
+
+.bg-bateau {
+  background-repeat: no-repeat;
+  height: 38px;
+  margin-left: -200px;
+}
+
+.container-fluid {
+  align-content:space-around ;
+}
+
+// .casedesAttaquesHit {
+//   @include caseDimension;
+//   background: red;
+//   border-style: solid;
+// }
+
+// .casedesAttaquesMiss {
+//   @include caseDimension;
+//   background: white;
+//   border-style: solid;
+// }
+
+
+.case, .casedesAttaques {
+  @include caseDimension;
+  background:$mer;
+  border:0.001em solid ;
+  border-color: $griscontour;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//case vide du coin en haut a gauche
+.caseVide {
+  @include caseDimension;
+}
+
+.caseEntete, .caseVerticale {
+  @include caseDimension;
+  display:flex;
+  padding-top:6px;
+  background-color:$gris;
+  color:white;
+  font-weight: bold;
+  justify-content: space-around;
+  border:0.001em solid ;
+  border-color: $griscontour;
+}
+
+.colonneVerticale {
+  text-align: center;
+  width: 16px;
+}
+
+.cardnomcol {
+  width: $largeurcase;
+  text-align:center;
+  margin-left: 200px;
+}
+
+//entete des nom des colonnes A-B-C-D-E etc
+.enteteLettre {
+  display: flex;
+  flex-direction: row;
+  width: $largeurcase*10+10px;
+  text-align: center;
+}
+
+
+.row {
+  margin: 0px;
+}
+
+.tableau {
+  // background:rgb(18, 82, 185) !important;
+  width: $largeurcase*10;
+  height: $hauterCase*10;
+}
+
+.jumbotron {
+  font-size: 36px;
+  font-weight: bold;
+  color:#ffffff;
+  // height: auto;
+  // opacity:2;
+  width: auto;
+  border-radius: 0%;
+}
