@@ -5,14 +5,11 @@ import Bateau from "./Bateau";
 export default function Case(props) {
 
   // const [unBateau, setBateau] = useState([])
-  
-  // console.log("le props de Case:");
-  // console.log(props.info.color);
   // console.log(props.stateColor);
-  
   const [{ isOver, canDrop }, dropRef] = useDrop(
       () => ({
         accept: 'bateau',
+        // drop: (item) => props.onDrop(item, props.info.index, props.stateColor),
         drop: (item) => props.onDrop(item, props.info.index, props.stateColor),
         collect: (monitor) => ({
           isOver: !!monitor.isOver(),
@@ -22,7 +19,8 @@ export default function Case(props) {
 
     return (
       <React.Fragment>
-        <div className={props.info.nomclasse} id={props.info.index} ref={dropRef} style={{backgroundColor: isOver ? "black" : props.info.color}}>
+        {/* <div className={props.info.nomclasse} id={props.info.index} ref={dropRef} style={{backgroundColor: isOver ? "black" : props.info.color}}> */}
+        <div className={props.info.nomclasse} id={props.info.index} ref={dropRef} style={{ backgroundImage: "url(/" + props.info.color + ")" }}>
           {props.info.value}
         </div>
     </React.Fragment>

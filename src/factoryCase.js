@@ -12,7 +12,8 @@ export default class FactoryCase {
 
     // if (p_typeClasse == "D") {
     //   console.log("dans createCase");
-    //   console.log(colorCase);
+    //   console.log(colorCase);   //bluetile.png
+    //   console.log("dans createCase2");
     //   console.log(stateCouleurs);
     // }
 
