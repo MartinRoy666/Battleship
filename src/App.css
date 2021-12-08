@@ -1,136 +1,8 @@
 .cardbateau {
-  padding-left: 150px;
-  margin-left: 50px;
-}
-
-.container-fluid {
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-}
-
-.partieDunBateau {
-  height: 40px;
-  width: 40px;
-  background: #001244;
-  color: white;
-}
-
-.bateauHorizontal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background: #af162a;
-  color: white;
-  border-style: solid;
-}
-
-.bateauVertical {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 40px;
-  background: #af162a;
-  color: white;
-  border-style: solid;
-}
-
-.casedesAttaquesHit {
-  height: 40px;
-  width: 40px;
-  background: red;
-  border-style: solid;
-}
-
-.casedesAttaquesMiss {
-  height: 40px;
-  width: 40px;
-  background: white;
-  border-style: solid;
-}
-
-.case, .casedesAttaques {
-  height: 40px;
-  width: 40px;
-  background: #005086;
-  border: 0.001em solid;
-  border-color: #c0c5ce;
-}
-
-.caseVide {
-  height: 40px;
-  width: 40px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.caseEntete, .caseVerticale {
-  height: 40px;
-  width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 6px;
-  background-color: #a7adba;
-  color: white;
-  font-weight: bold;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border: 0.001em solid;
-  border-color: #c0c5ce;
-}
-
-.enteteLettre {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 410px;
-  text-align: center;
-}
-
-.colonneVerticale {
-  text-align: center;
-  width: 16px;
-}
-
-.cardnomcol {
-  width: 40px;
-  text-align: center;
-  margin-left: 200px;
-}
-
-.cardbateau {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
-}
-
-.row {
-  margin: 0px;
-}
-
-.tableau {
-  width: 400px;
-  height: 400px;
-}
-
-.jumbotron {
-  font-size: 36px;
-  font-weight: bold;
-  color: #ffffff;
-  height: auto;
-  width: auto;
+  padding-left: 200px;
+  margin-left: 20px;
+  background-repeat: no-repeat;
+  height: 38px;
 }
 
 .bg-image {
@@ -138,8 +10,6 @@
   overflow: hidden;
   background-repeat: no-repeat;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .bg-image .mask {
@@ -166,5 +36,87 @@
       -ms-flex-pack: center !important;
           justify-content: center !important;
   color: white !important;
+}
+
+.bg-bateau {
+  background-repeat: no-repeat;
+  height: 38px;
+  margin-left: -200px;
+}
+
+.container-fluid {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.case, .casedesAttaques {
+  height: 40px;
+  width: 40px;
+  background: #005086;
+  border: 0.001em solid;
+  border-color: #c0c5ce;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caseVide {
+  height: 40px;
+  width: 40px;
+}
+
+.caseEntete, .caseVerticale {
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 6px;
+  background-color: #a7adba;
+  color: white;
+  font-weight: bold;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 0.001em solid;
+  border-color: #c0c5ce;
+}
+
+.colonneVerticale {
+  text-align: center;
+  width: 16px;
+}
+
+.cardnomcol {
+  width: 40px;
+  text-align: center;
+  margin-left: 200px;
+}
+
+.enteteLettre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 410px;
+  text-align: center;
+}
+
+.row {
+  margin: 0px;
+}
+
+.tableau {
+  width: 400px;
+  height: 400px;
+}
+
+.jumbotron {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  width: auto;
+  border-radius: 0%;
 }
 /*# sourceMappingURL=App.css.map */

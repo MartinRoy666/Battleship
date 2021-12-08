@@ -19,7 +19,7 @@ export default function CasedesAttaques(props) {
     else {
         reponse = false;
     }
-    setCouleur(reponse == true ? "red" : "white");
+    setCouleur(reponse === true ? "red" : "white");
   }
   
   const _onButtonClick = (id) => {
