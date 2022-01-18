@@ -15,7 +15,7 @@ export default function App()  {
   return (
     <AuthContext.Provider value={[auth, setAuth]}>
     <BrowserRouter>
-      <div><Navbar/> menu : {auth.token}</div>
+      <div><Navbar/> {auth.token}</div>
       <Routes>
         <Route path="/play" element={<Play/>} /> 
         <Route path="/login" element={<Login/>} /> 
