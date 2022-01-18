@@ -4,6 +4,15 @@
   height: $hauterCase;
   width: $largeurcase;
 }
+@font-face {
+  font-family: 'Plane Crash';
+  src: local('Plane Crash'), url('/Fonts/PlaneCrash.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Russo One';
+  src: local('Russo One'), url('/Fonts/RussoOne-Regular.ttf') format('opentype');
+}
 
 .accueuilcontent {
   max-height: 900px;
@@ -14,6 +23,10 @@
 }
 
 .accueuilcontainer {
+  // font-family: 'Gill Sans';
+  font-family: "Russo One";
+  font-size: 20px;
+  font-weight: normal;
   padding-top: 50px;
   text-align: center;
   justify-content: center!important;

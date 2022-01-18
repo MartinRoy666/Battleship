@@ -9,7 +9,7 @@ export default function APropos () {
   return (
     <div className="accueuilcontent" style={sectionImage}>
         <div className="container accueuilcontainer">
-        <h1>A propos</h1>
+        <h1>A PROPOS</h1>
         <p>Lorem ipsum</p>
         </div>
     </div>
