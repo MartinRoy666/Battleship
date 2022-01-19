@@ -50,43 +50,6 @@ export default function Play() {
             </div>
         </div>
     </div>
-      {/* <div className="App">
-        <div className="jumbotron_jeu bg-image justify-center align-items-center" style={sectionImage}>
-          <span className="titreJumbo">BATTLESHIP</span>
-          <div className="mask" style={ bgImgmask }></div>
-        </div>
-        <div>
-          <div className="container-fluid">
-            <div className="statutjeu">
-              <span>{game}</span>
-              <button className="buttonphase" onClick={() => changePhase(game)}>Change Phase</button>
-            </div>
-            <div className="row">
-              <div className="cardnomcol">
-                <NomColonnes/>
-              </div>
-              <Montableau type="D"></Montableau>
-              <div className="cardbateau">
-                <Bateau isDragging id={"carrier"} sens={"H"} longueur={5} color="red" modelbateau="carrier.jpg"/>
-                <br></br>
-                <Bateau isDragging id={"cuirasse"} sens={"H"} longueur={4} color="yellow" modelbateau="cuirasse.png"/>
-                <br></br>
-                <Bateau isDragging id={"submarine"} sens={"H"} longueur={3} color="cyan" modelbateau="submarine.png"/>
-                <br></br>
-                <Bateau isDragging id={"croiseur"} sens={"V"} longueur={3} color="green" modelbateau="croiseur.png"/>
-                <br></br>
-                <Bateau isDragging id={"torpilleur"} sens={"H"} longueur={2} color="purple" modelbateau="torpilleur.png"/>
-                <br></br>
-              </div>
-
-              <div className="cardnomcol">
-                  <NomColonnes/>
-              </div>
-              <Montableau type="A"></Montableau>        
-            </div>
-          </div>
-        </div>
-    </div> */}
     </DndProvider>
   );
 }
