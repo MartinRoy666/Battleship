@@ -23,18 +23,30 @@
 }
 
 .accueuilcontainer {
-  // font-family: 'Gill Sans';
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;  
   font-family: "Russo One";
   font-size: 20px;
   font-weight: normal;
   padding-top: 50px;
   text-align: center;
   justify-content: center!important;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
   min-height: 400px;
 }
+
+.jeucontainer {
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;  
+  font-family: "Russo One";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  justify-content: center!important;
+  min-height: 900px;
+}
+
 
 .cardbateau {
   padding-left: 200px;

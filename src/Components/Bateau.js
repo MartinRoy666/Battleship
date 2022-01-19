@@ -3,8 +3,9 @@ import { useDrag } from 'react-dnd';
 
 //<Bateau draggable id={"1"} sens={"H"} onDrop= { DropBoat } longueur={5} color={"red"}/>
 
-export default function Bateau({id, sens, longueur, color, modelbateau}) {
+export default function Bateau({id,  longueur, color, modelbateau}) {
 
+  const [sens, setOrientation] = useState("H");
   const [nbBateau, setBateau] = useState(1);
   const [{ opacity }, dragRef] = useDrag(
     () => ({
@@ -20,12 +21,16 @@ export default function Bateau({id, sens, longueur, color, modelbateau}) {
         opacity: monitor.isDragging() ? 0.5 : 1
       })
     }),
-    [nbBateau]
+    [nbBateau,sens]
   )
 
-// demo onclick nouvellefonction
-  let onclickli = () => {
 
+  const flip = () => {
+    if (sens == "H") {
+      setOrientation("V");
+    } else {
+      setOrientation("H");
+    }
   }
   
   const styleBateau = {
@@ -34,10 +39,10 @@ export default function Bateau({id, sens, longueur, color, modelbateau}) {
 
 return (
   <>
-  
-   {/* <div onClick={() => onclickli()} className="bateau bg-bateau justify-center" ref={dragRef} style={{ backgroundImage: "url(/" + modelbateau + ")" }}> */}
    <div className="bateau bg-bateau justify-center" ref={dragRef} style={styleBateau}>
    </div>
+
+   <button className="" onClick={() => flip()}>{sens}</button>
   </>
   );
 }

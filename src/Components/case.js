@@ -6,7 +6,9 @@ export default function Case(props) {
   const [{ isOver, canDrop }, dropRef] = useDrop(
       () => ({
         accept: 'bateau',
-        // drop: (item) => props.onDrop(item, props.info.index, props.stateColor),
+        //onDrop a la valeur DropBoat
+        //onDrop = ce qui a ete donner au factory pour createCase (fctName)
+        //nouvelCase = (<Case info = {caseTableau} onDrop= { fctName } stateBateau= {stateCouleurs}/>);
         drop: (item) => props.onDrop(item, props.info.index, props.stateBateau),
         collect: (monitor) => ({
           isOver: !!monitor.isOver(),

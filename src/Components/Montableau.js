@@ -15,6 +15,7 @@ export default function Montableau(props) {
 
 
   const DropBoat = (item, index, stateBoat) => {
+    console.log(item.sens);
     let vraiIndex= index.substring(0,index.indexOf("_"));
     let indexForBoats= [];
 
