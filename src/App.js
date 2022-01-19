@@ -1,7 +1,7 @@
 import './App.scss';
 import React, {useState} from 'react';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Accueuil from './pages/accueuil.js';
+import Accueuil from './pages/accueil.js';
 import APropos from './pages/apropos.js';
 import Login from './pages/login.js';
 import Navbar from './Components/Navbar.js';

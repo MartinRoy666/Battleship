@@ -7,10 +7,11 @@ const sectionImage = {
 export default function APropos () {
 
   return (
-    <div className="accueuilcontent" style={sectionImage}>
-        <div className="container accueuilcontainer">
+    <div className="accueilcontent" style={sectionImage}>
+        <div className="container accueilcontainer">
         <h1>A PROPOS</h1>
-        <p>Lorem ipsum</p>
+        <p>Projet effectué par Martin Roy lors du AEC Conception de site Web</p>
+        <p>Cegep de Saint-Jean sur Richelieu 2021-2022</p>
         </div>
     </div>
   )

@@ -50,9 +50,9 @@ export default function Login () {
   }
 
   return (
-    <div className="accueuilcontent" style={sectionImage}>
+    <div className="accueilcontent" style={sectionImage}>
       <div className="container text-justify p-0">
-        <div className="card accueuilcontainer">
+        <div className="card accueilcontainer">
           <div className="card-body">
             <h1>Connexion</h1>
             <label>Username</label>

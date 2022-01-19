@@ -1,14 +1,14 @@
 import imgBack from "../images/backgroundaccueuil.png";
 
-export default function Accueuil () {
+export default function Accueil () {
 
   const sectionImage = {
     backgroundImage: `url(${imgBack})`
   }
 
   return (
-    <div className="accueuilcontent" style={sectionImage}>
-      <div className="container accueuilcontainer">
+    <div className="accueilcontent" style={sectionImage}>
+      <div className="container accueilcontainer">
       <h1>BATTLESHIP</h1>
       <br></br>
       <p>Venez affronter un adversaire en pleine mer avec votre flotte navale.</p>
